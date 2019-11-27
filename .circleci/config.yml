@@ -47,8 +47,6 @@ jobs:
           destination: coverage
       - store_test_results:
           path: test/reports
-      - codecov/upload:
-          file: test/reports
 
   lint:
     <<: *defaults
