@@ -37,6 +37,7 @@ group :development do
 end
 
 group :test do
+  gem 'codecov'
   gem 'guard'
   gem 'guard-minitest'
   gem 'minitest-reporters'
