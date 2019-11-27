@@ -37,7 +37,6 @@ group :development do
 end
 
 group :test do
-  gem 'coveralls', require: false
   gem 'guard'
   gem 'guard-minitest'
   gem 'minitest-reporters'

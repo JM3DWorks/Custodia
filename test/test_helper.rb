@@ -1,19 +1,17 @@
 # frozen_string_literal: true
 
-require 'coveralls'
-Coveralls.wear!('rails')
-
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 require 'rails/test_help'
 require 'simplecov'
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start do
   add_filter '/vendor/'
 end
 require 'minitest/reporters'
 require 'faker'
 Minitest::Reporters.use!
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
