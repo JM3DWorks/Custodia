@@ -177,8 +177,6 @@ GEM
     mini_racer (0.2.8)
       libv8 (>= 6.9.411)
     minitest (5.13.0)
-    minitest-ci (3.4.0)
-      minitest (>= 5.0.6)
     minitest-reporters (1.4.2)
       ansi
       builder
@@ -352,7 +350,6 @@ DEPENDENCIES
   mime-types
   mini_magick
   mini_racer
-  minitest-ci
   minitest-reporters
   pg
   puma

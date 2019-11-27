@@ -40,7 +40,6 @@ group :test do
   gem 'coveralls', require: false
   gem 'guard'
   gem 'guard-minitest'
-  gem 'minitest-ci'
   gem 'minitest-reporters'
   gem 'rails-controller-testing'
   gem 'simplecov'
