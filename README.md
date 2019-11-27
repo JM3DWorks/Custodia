@@ -12,4 +12,4 @@ Users can add/update equipment, and add/update maintenance log entries for each.
 
 [![CircleCI](https://img.shields.io/circleci/project/github/Jmccl89/Custodia.svg)](https://circleci.com/gh/Jmccl89/Custodia)
 [![security](https://hakiri.io/github/JM3DWorks/Custodia/master.svg)](https://hakiri.io/github/JM3DWorks/Custodia/master)
-[![Coverage Status](https://coveralls.io/repos/github/Jmccl89/Custodia/badge.svg?branch=master)](https://coveralls.io/github/Jmccl89/Custodia?branch=master)
+[![codecov](https://codecov.io/gh/JM3DWorks/Custodia/branch/master/graph/badge.svg)](https://codecov.io/gh/JM3DWorks/Custodia)
