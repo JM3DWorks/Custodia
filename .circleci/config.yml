@@ -106,7 +106,7 @@ jobs:
       - image: circleci/ruby:latest-browsers
     steps:
       - checkout
-      - gem install dpl
+      - run: gem install dpl
       - run:
           name: Deploy Master to Heroku
           command: |
