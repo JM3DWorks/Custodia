@@ -32,7 +32,7 @@ green:
 <% 30.times do |n| %>
 entry_<%= n %>:
   date: <%= Date.jd(2_456_000 + Random.rand(1000)).to_s %>
-  content: <%= Faker::Lorem.sentence(5) %>
+  content: <%= Faker::Lorem.sentence(word_count: 5) %>
   mileage: 197_000
   employee: 'Mike'
   equipment: ford
