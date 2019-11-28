@@ -6,7 +6,7 @@ class EquipmentsControllerTest < ActionDispatch::IntegrationTest
   def setup
     @base_title = 'Custodia'
     @equipment = equipment(:ford)
-    @user       = users(:michael)
+    @user = users(:michael)
     @other_user = users(:archer)
   end
 

@@ -13,8 +13,6 @@ Metrics/MethodLength:
 # Disable this cop so we can get better code coverage.
 Style/IfUnlessModifier:
   Enabled: false
-Rails/SkipsModelValidations:
-  Enabled: false
 # Force public/protected/private keyword to be indented at the same level as the def keyword.
 Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
