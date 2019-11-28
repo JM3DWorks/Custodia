@@ -100,6 +100,17 @@ jobs:
       - store_artifacts:
           path: brakeman-output.html
           destination: brakeman-output.html
+          
+  deploy-job:
+    docker:
+      - image: circleci/ruby:latest-browsers
+    steps:
+      - checkout
+      - gem install dpl
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_STAGING_API_KEY
 
 workflows:
   version: 2
@@ -108,3 +119,9 @@ workflows:
       - test
       - lint
       - brakeman
+      - deploy-job:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
