@@ -117,8 +117,17 @@ workflows:
   test-deploy:
     jobs:
       - test
+        filters:
+          tags:
+            only: /.*/
       - lint
+        filters:
+          tags:
+            only: /.*/
       - brakeman
+        filters:
+          tags:
+            only: /.*/
       - deploy-job:
           requires:
             - test
