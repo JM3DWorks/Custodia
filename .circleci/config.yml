@@ -116,15 +116,15 @@ workflows:
   version: 2
   test-deploy:
     jobs:
-      - test
+      - test:
         filters:
           tags:
             only: /.*/
-      - lint
+      - lint:
         filters:
           tags:
             only: /.*/
-      - brakeman
+      - brakeman:
         filters:
           tags:
             only: /.*/
