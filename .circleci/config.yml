@@ -118,16 +118,22 @@ workflows:
     jobs:
       - test:
         filters:
-          tags:
-            only: /.*/
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
       - lint:
         filters:
-          tags:
-            only: /.*/
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
       - brakeman:
         filters:
-          tags:
-            only: /.*/
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
       - deploy-job:
           requires:
             - test
