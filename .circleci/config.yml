@@ -119,15 +119,15 @@ workflows:
       - test:
           filters:
             tags:
-              only: /^v.*/
+              only: /.*/
       - lint:
           filters:
             tags:
-              only: /^v.*/
+              only: /.*/
       - brakeman:
           filters:
             tags:
-              only: /^v.*/
+              only: /.*/
       - deploy-job:
           requires:
             - test
