@@ -122,8 +122,11 @@ workflows:
       - deploy-job:
           requires:
             - test
+            - lint
+            - brakeman
           filters:
             branches:
-              only: master
+              ignore: /.*/
             tags:
-              only: /^v\d+\.\d+\.\d+$/
+              only: /^v.*/
+
