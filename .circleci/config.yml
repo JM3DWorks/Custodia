@@ -134,5 +134,7 @@ workflows:
             - lint
             - brakeman
           filters:
+            branches:
+              only: master
             tags:
               only: /^v.*/
