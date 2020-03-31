@@ -15,7 +15,7 @@
   <% if current_user.admin? %>
     <br />
 <span class="delete-button">
-  <%= button_to 'Delete', equipment_entry_path(@equipment, entry), method: :delete,
+  <%= link_to 'Delete', equipment_entry_path(@equipment, entry), method: :delete,
                                      data: { confirm: 'Are you sure?' } %>
 </span>
 |
